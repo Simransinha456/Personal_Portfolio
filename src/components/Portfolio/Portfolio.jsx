@@ -15,7 +15,7 @@ const Portfolio = () => {
     <div className="portfolio" id="portfolio">
       {/* heading */}
       <span style={{color: darkMode?'white': ''}}> Projects</span>
-      {/* <span>Showcasing my creative vision</span> */}
+      <span>Showcasing my creative vision</span>
 
       {/* slider */}
       <Swiper
@@ -25,7 +25,9 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
+          <a href="https://personal-portfolio-virid-six-35.vercel.app/">
           <img src={abcd} alt="" />
+          </a>
         </SwiperSlide>
 
         <SwiperSlide>
