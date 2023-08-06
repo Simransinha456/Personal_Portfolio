@@ -15,7 +15,7 @@ const Portfolio = () => {
     <div className="portfolio" id="portfolio">
       {/* heading */}
       <span style={{color: darkMode?'white': ''}}> Projects</span>
-      <span>Showcasing my creative vision</span>
+      {/* <span>Showcasing my creative vision</span> */}
 
       {/* slider */}
       <Swiper
