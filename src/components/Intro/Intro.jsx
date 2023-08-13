@@ -69,6 +69,9 @@ const Intro = () => {
           whileInView={{ left: "68%" }}
           transition={transition}
           className="floating-div"
+
+          style={{top: "-4%", left: "68%"}}
+          // className="floating-div"
         >
           <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
@@ -78,6 +81,8 @@ const Intro = () => {
           initial={{ left: "9rem", top: "22rem" }}
           whileInView={{ left: "0rem" }}
           transition={transition}
+
+          style={{top: "18rem", left: "8rem"}}
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
