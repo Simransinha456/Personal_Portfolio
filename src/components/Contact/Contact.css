@@ -1,10 +1,9 @@
 .contact-form{
-    padding: 0 2rem 0 3rem;
+    padding: 0 3rem 0 3rem;
     display: flex;
-    height: 65vh;
+    height: 80vh;
     margin-top: 4rem;
-      /* scroll */
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 
 .c-right{
@@ -26,18 +25,18 @@
     
 }
 
-/* .c-right .user{
-    width: 25rem;
+.c-right .user{
+    width: 20rem;
     height: 2rem;
-    padding: 0.6em;
+    padding: 0.3em;
     outline: none;
     border: 2px solid var(--orange);
-    border-radius: 12px;
-    font-size: 18px;   
-} */
+    border-radius: 8px;
+    font-size: 16px;   
+}
 
 textarea{
-    height: 4rem!important;
+    height: 6rem!important;
 }
 
 .c-blur1{
