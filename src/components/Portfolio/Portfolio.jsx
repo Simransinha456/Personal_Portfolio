@@ -11,6 +11,7 @@ import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+    
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
@@ -19,8 +20,8 @@ const Portfolio = () => {
 
       {/* slider */}
       <Swiper
-        spaceBetween={30}
-        slidesPerView={4}
+        // spaceBetween={30}
+        slidesPerView={3}
         grabCursor={true}
         className="portfolio-slider"
       >
@@ -28,7 +29,8 @@ const Portfolio = () => {
           <a href="https://personal-portfolio-virid-six-35.vercel.app/">
           <img src={abcd} alt="" />
           </a>
-        </SwiperSlide>
+        </SwiperSlide> 
+
 
         <SwiperSlide>
           <a href="https://random-cat-app-pink.vercel.app/">
