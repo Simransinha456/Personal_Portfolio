@@ -2,15 +2,25 @@ import React, { useContext, useRef } from "react";
 import "./Contact.css";
 import emailjs from '@emailjs/browser';
 import { themeContext } from "../../Context";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   const form = useRef();
 
+  const toastVariables = {
+    position: "bottom-right", 
+    autoClose: 8000,
+    pauseOnHover: true,
+    draggable: true,
+    theme: "dark",
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
+  
     emailjs
       .sendForm(
         'service_q03sei3',
@@ -20,8 +30,8 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          // console.log(result.text);
-          console.log("message send")
+          toast.success("Message Sent", toastVariables); // Use toast.success for success message
+          console.log("message sent");
         },
         (error) => {
           console.log(error.text);
@@ -51,6 +61,7 @@ const Contact = () => {
       </div>
 
     </form>
+    <ToastContainer />
       </div>
     </div>
   );

@@ -25,7 +25,8 @@
 }
 
 .portfolio .swiper::-webkit-scrollbar {
-  display: none; /* Hide the scrollbar */
+  display: none;
+  /* Hide the scrollbar */
 }
 
 .portfolio-slider {
@@ -46,4 +47,36 @@
   flex-direction: column;
   /* justify-content: space-between; */
 
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio {
+    display: block;
+    height: auto;
+    text-align: center; 
+  }
+
+  .portfolio span:nth-of-type(1),
+  .portfolio span:nth-of-type(2) {
+    font-size: 2rem;
+  }
+
+  .portfolio-slider {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+
+  .portfolio-slider .swiper-slide {
+    width: calc(60% - 2rem); 
+    margin: 5rem;
+  }
+
+  .portfolio img {
+    width: 17rem; 
+    height: auto;
+  }
+  
 }
