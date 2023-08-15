@@ -45,9 +45,9 @@
 .i-icons > * {
   transform: scale(0.5);
 }
-.i-icons > *:hover {
+/* .i-icons > *:hover {
   cursor: pointer;
-}
+} */
 /* right side styling */
 .i-right {
   flex: 1;
@@ -72,8 +72,8 @@
 }
 
 .i-right > :nth-child(3) {
-  transform: scale(1.1);
-  left: 10%;
+  transform: scale(1.3);
+  left: 20%;
 }
 
 .i-right > :nth-child(4) {
@@ -84,9 +84,6 @@
   padding: 0;
 }
 
-.i-right > * img {
-  filter: brightness(1.5) contrast(1); 
-}
 
 
 /* blur */
@@ -119,6 +116,6 @@
   }
   .floating-div:nth-of-type(1){
     /* display: none; */
-    top: -7rem !important;;
+    top: -7rem !important;
   }
 }
